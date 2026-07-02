@@ -1,0 +1,11 @@
+# TOMBS-Mural and RSPT-Net
+
+We propose RSPT-Net (Reference-guided Style Prior Transformer Network), a reference-guided transformer-based framework for component-level restoration of Tang dynasty tomb murals. The method addresses the challenge of integrating historical knowledge into mural inpainting by introducing a component-level reference bank constructed from TOMBS-Mural. Retrieved references are organized by component type, style lineage, and preservation quality to provide explicit structural and stylistic priors. A geometry-aware structure prior further aligns contour-level information, while multi-scale style encoding captures hierarchical artistic features. These priors are injected into a transformer-based restoration network via cross-attention and FiLM modulation. Experiments on TOMBS-Mural and MuralDH demonstrate that RSPT-Net achieves superior performance in structural fidelity, stylistic consistency, and perceptual quality, providing a unified framework for evidence-driven cultural heritage restoration.
+
+## Method Overview
+
+We present RSPT-Net, a reference-guided transformer-based framework that explicitly integrates archaeological knowledge and artistic style priors into mural restoration. Unlike conventional inpainting methods that rely solely on image-level context or learned generative priors, RSPT-Net introduces a structured component-level reference mechanism built on TOMBS-Mural. A multi-factor retrieval strategy selects semantically and stylistically consistent reference components, forming a traceable historical evidence bank. The geometry-aware structure prior refines contour alignment between references and target regions. A multi-scale style encoder extracts hierarchical representations from retrieved murals, which are fused into the restoration backbone through cross-attention and FiLM-based modulation. This design enables simultaneous modeling of structural morphology, local texture continuity, and global stylistic consistency. Extensive experiments demonstrate that RSPT-Net significantly improves restoration quality and provides a more interpretable and evidence-driven paradigm for mural image inpainting.
+
+## Data release policy
+
+The complete dataset is available from the corresponding author upon reasonable request. Additional data will be released in future updates.
